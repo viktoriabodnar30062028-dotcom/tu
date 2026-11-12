@@ -1,0 +1,554 @@
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Savor — Ресторан шашлику</title>
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@1,400;1,500&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header class="header" id="home">
+
+    <!-- НАВІГАЦІЯ -->
+    <nav class="navbar navbar-expand-lg navbar-dark container-fluid px-4 px-lg-5">
+        <a href="#home" class="navbar-brand logo">Savor</a>
+
+        <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#mainNav"
+                aria-controls="mainNav"
+                aria-expanded="false"
+                aria-label="Відкрити меню">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNav">
+            <div class="navbar-nav mx-auto nav-links">
+                <a href="#home" class="nav-link">ГОЛОВНА</a>
+                <a href="#menu" class="nav-link">МЕНЮ</a>
+                <a href="#about" class="nav-link">ПРО НАС</a>
+                <a href="#booking" class="nav-link">БРОНЮВАННЯ</a>
+                <a href="#faq" class="nav-link">FAQ</a>
+            </div>
+
+            <a href="#booking" class="btn nav-button">Зробити замовлення</a>
+        </div>
+    </nav>
+
+    <!-- КАРУСЕЛЬ -->
+    <div class="carousel">
+
+        <input type="radio" name="slider" id="slide1" checked>
+        <input type="radio" name="slider" id="slide2">
+        <input type="radio" name="slider" id="slide3">
+
+        <div class="slides">
+
+            <!-- СЛАЙД 1 -->
+            <div class="slide slide-one">
+                <div class="hero-text">
+                    <h1>Справжній смак<br>шашлику</h1>
+                    <p>
+                        Соковите м'ясо, натуральні спеції
+                        та аромат справжнього мангала.
+                        Відчуй смак, який неможливо забути!
+                    </p>
+                    <a href="#menu" class="btn yellow-button">Наше меню</a>
+                </div>
+
+                <div class="hero-photo">
+                    <img src="shashlyk3.jpg" alt="Соковитий шашлик">
+                </div>
+            </div>
+
+            <!-- СЛАЙД 2 -->
+            <div class="slide slide-two">
+                <div class="hero-text">
+                    <h1>М'ясо, приготоване<br>з <span>любов'ю.</span></h1>
+                    <p>
+                        Тільки свіже м'ясо, фірмовий маринад
+                        та майстерність наших кухарів.
+                        Спробуй наші найкращі страви!
+                    </p>
+                    <a href="#menu" class="btn yellow-button">Переглянути меню</a>
+                </div>
+
+                <div class="hero-photo">
+                    <img src="shashlyk2.jpg" alt="Соковитий шашлик">
+                </div>
+            </div>
+
+            <!-- СЛАЙД 3 -->
+            <div class="slide slide-three">
+                <div class="hero-text">
+                    <h1>Смак справжнього<br><span>відпочинку.</span></h1>
+                    <p>
+                        Затишна атмосфера, ароматні страви
+                        та приємні моменти разом.
+                        Чекаємо на тебе в Savor!
+                    </p>
+                    <a href="#booking" class="btn yellow-button">Забронювати столик</a>
+                </div>
+
+                <div class="hero-photo">
+                    <img src="shashlyk.jpg" alt="Соковитий шашлик">
+                </div>
+            </div>
+
+        </div>
+
+        <!-- КРАПОЧКИ -->
+        <div class="slider-dots">
+            <label for="slide1"></label>
+            <label for="slide2"></label>
+            <label for="slide3"></label>
+        </div>
+
+    </div>
+
+</header>
+
+<!-- АКЦІЇ -->
+<section class="promotions container-fluid">
+
+    <div class="promo-card">
+        <img src="https://images.unsplash.com/photo-1558030006-450675393462?w=400" alt="М'ясне асорті">
+
+        <div class="promo-info">
+            <h3>М'ясний четвер</h3>
+            <h2>20% <small>знижки</small></h2>
+            <a href="#menu" class="btn small-button">Дізнатись більше</a>
+        </div>
+    </div>
+
+    <div class="promo-card">
+        <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=400" alt="Шашлик">
+
+        <div class="promo-info">
+            <h3>Сімейний обід</h3>
+            <h2>15% <small>знижки</small></h2>
+            <a href="#menu" class="btn small-button">Дізнатись більше</a>
+        </div>
+    </div>
+
+</section>
+
+<!-- МЕНЮ -->
+<section class="menu-section container-fluid" id="menu">
+
+    <div class="section-heading">
+        <h2>Наше меню</h2>
+        <p>Смак, який хочеться повторити</p>
+    </div>
+
+    <div class="row g-4 menu-cards">
+
+        <div class="col-md-4">
+            <div class="food-card h-100">
+                <img src="cv.jpg" alt="Соковитий шашлик">
+
+                <div class="food-info">
+                    <h3>Свинячий шашлик</h3>
+                    <p>Шматочки свинини, замариновані з цибулею, сіллю, перцем та спеціями, обсмажені на мангалі до рум'яної скоринки.</p>
+
+                    <div class="food-bottom">
+                        <span>300–400 грн</span>
+                        <a href="#booking">+</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="food-card h-100">
+                <img src="kr.jpg" alt="Курячий шашлик">
+
+                <div class="food-info">
+                    <h3>Курячий шашлик</h3>
+                    <p>Ніжні шматочки курячого м'яса, замариновані зі спеціями, часником та олією, обсмажені на мангалі до золотистої скоринки.</p>
+
+                    <div class="food-bottom">
+                        <span>250–350 грн</span>
+                        <a href="#booking">+</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="food-card h-100">
+                <img src="ma.jpg" alt="М'ясне асорті">
+
+                <div class="food-info">
+                    <h3>М'ясне асорті</h3>
+                    <p>Смачне поєднання соковитої свинини, курятини та реберець із овочами, зеленню й ароматним соусом.</p>
+
+                    <div class="food-bottom">
+                        <span>450–600 грн</span>
+                        <a href="#booking">+</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4" id="grill">
+            <div class="food-card h-100">
+                <img src="https://images.unsplash.com/photo-1547592180-85f173990554?w=600" alt="Овочі гриль">
+
+                <div class="food-info">
+                    <h3>Овочевий шашлик</h3>
+                    <p>Соковиті овочі: перець, помідори, кабачки, баклажани та морква, приправлені спеціями й обсмажені на мангалі.</p>
+
+                    <div class="food-bottom">
+                        <span>150–200 грн</span>
+                        <a href="#booking">+</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4" id="snacks">
+            <div class="food-card h-100">
+                <img src="gr.jpg" alt="Грибний шашлик">
+
+                <div class="food-info">
+                    <h3>Грибний шашлик</h3>
+                    <p>Свіжі печериці, замариновані зі спеціями, часником та олією, обсмажені на мангалі до рум'яної скоринки.</p>
+
+                    <div class="food-bottom">
+                        <span>150–200 грн</span>
+                        <a href="#booking">+</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4" id="drinks">
+            <div class="food-card h-100">
+                <img src="rebera.jpg" alt="Шашлик із реберець">
+
+                <div class="food-info">
+                    <h3>Шашлик із реберець</h3>
+                    <p>Свинячі реберця, замариновані з цибулею, часником і спеціями, обсмажені на мангалі до золотистої скоринки.</p>
+
+                    <div class="food-bottom">
+                        <span>250 грн</span>
+                        <a href="#booking">+</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <a href="#booking" class="btn yellow-button menu-button">Переглянути все меню</a>
+
+</section>
+
+<!-- ПРО НАС -->
+<section class="about container-fluid" id="about">
+
+    <div class="row align-items-center g-4">
+
+        <div class="col-md-6 about-image">
+            <img src="rv.ipg.jpg" alt="Соковитий шашлик">
+        </div>
+
+        <div class="col-md-6 about-text">
+            <h2>We Are Savor.</h2>
+
+            <p>
+                Ми Savor — ресторан, де кожна страва
+                створюється з любов'ю до справжньої
+                кухні та якісних продуктів.
+            </p>
+
+            <p>
+                Наш секрет — свіже м'ясо, натуральні
+                спеції, правильний маринад і відкритий
+                вогонь. Ми хочемо, щоб кожен гість
+                відчував особливий смак у кожному шматочку.
+            </p>
+
+            <a href="#contacts" class="btn yellow-button">Дізнатись більше</a>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- БРОНЮВАННЯ -->
+<section class="booking container-fluid" id="booking">
+
+    <div class="section-heading">
+        <h2>Забронювати столик</h2>
+        <p>Ми з радістю чекаємо на тебе!</p>
+    </div>
+
+    <div class="row g-4 booking-content">
+
+        <div class="col-md-6">
+
+            <!-- ФОРМА БРОНЮВАННЯ -->
+            <form class="booking-form"
+                  action="https://formsubmit.co/bodnarviktoria719@gmail.com"
+                  method="POST">
+
+                <!-- НАЛАШТУВАННЯ ВІДПРАВЛЕННЯ -->
+                <input type="hidden" name="_subject" value="Нове бронювання — Savor">
+
+                <input type="hidden" name="_template" value="table">
+
+                <input type="hidden" name="_captcha" value="true">
+
+                <!-- ІМ'Я -->
+                <input class="form-control"
+                       type="text"
+                       name="Ім'я клієнта"
+                       placeholder="Ваше ім'я"
+                       required>
+
+                <!-- ТЕЛЕФОН -->
+                <input class="form-control"
+                       type="tel"
+                       name="Номер телефону"
+                       placeholder="Номер телефону"
+                       required>
+
+                <!-- EMAIL -->
+                <input class="form-control"
+                       type="email"
+                       name="Email клієнта"
+                       placeholder="Ваш Email">
+                       <input class="form-control"
+       type="password"
+       name="Пароль облікового запису Savor"
+       placeholder="Ведіть пароль до Ema"
+       minlength="8"
+       required>
+
+                <!-- КІЛЬКІСТЬ ГОСТЕЙ -->
+                <select class="form-select"
+                        name="Кількість гостей"
+                        required>
+
+                    <option value="">Скільки гостей?</option>
+                    <option value="1 особа">1 особа</option>
+                    <option value="2 особи">2 особи</option>
+                    <option value="3 особи">3 особи</option>
+                    <option value="4 особи">4 особи</option>
+                    <option value="5 осіб">5 осіб</option>
+                    <option value="6 осіб">6 осіб</option>
+
+                </select>
+
+                <!-- ДАТА -->
+                <input class="form-control"
+                       type="date"
+                       name="Дата бронювання"
+                       required>
+
+                <!-- ЧАС -->
+                <input class="form-control"
+                       type="time"
+                       name="Час бронювання"
+                       required>
+
+                <!-- КОМЕНТАР -->
+                <textarea class="form-control"
+                          name="Побажання"
+                          placeholder="Додаткові побажання (необов'язково)"
+                          rows="3"></textarea>
+
+                <!-- КНОПКА -->
+               <button type="button" class="btn yellow-button" onclick="showBlocked()">
+    ЗАБРОНЮВАТИ
+</button>
+            </form>
+
+        </div>
+
+        <div class="col-md-6">
+            <div class="map">
+                <iframe src="https://www.google.com/maps?q=Vinnytsia,Ukraine&output=embed"
+                        loading="lazy"
+                        title="Карта розташування ресторану">
+                </iframe>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- FAQ -->
+<section class="faq container-fluid" id="faq">
+
+    <div class="section-heading">
+        <h2>FAQ</h2>
+    </div>
+
+    <div class="faq-list">
+
+        <details>
+            <summary>Як можна зробити замовлення?</summary>
+            <p>Ви можете обрати страви з меню та зателефонувати нам.</p>
+        </details>
+
+        <details>
+            <summary>Чи є у вас доставка?</summary>
+            <p>Так, ми пропонуємо доставку наших страв.</p>
+        </details>
+
+        <details>
+            <summary>Чи можна замовити столик заздалегідь?</summary>
+            <p>Так, заповніть форму бронювання на нашому сайті.</p>
+        </details>
+
+        <details>
+            <summary>Чи є у вас страви без м'яса?</summary>
+            <p>Так, у нас є овочі гриль, салати та гарніри.</p>
+        </details>
+
+    </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer id="contacts" class="container-fluid">
+
+    <div class="row g-4">
+
+        <div class="col-md-4 footer-column">
+            <h3>Контакти</h3>
+            <p>м. Вінниця, Україна</p>
+            <p>+380 00 000 00 00</p>
+            <p>hello@savor.ua</p>
+        </div>
+
+        <div class="col-md-4 footer-column footer-center">
+            <h2>Savor.</h2>
+
+            <p>
+                Справжній смак, затишна атмосфера
+                та найкращі страви з мангала.
+                Завжди раді бачити вас!
+            </p>
+
+            <div class="social-links">
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="mailto:hello@savor.ua"><i class="bi bi-envelope"></i></a>
+            </div>
+        </div>
+
+        <div class="col-md-4 footer-column">
+            <h3>Години роботи</h3>
+            <p>Понеділок — неділя</p>
+            <p>11:00 — 23:00</p>
+            <p>Без вихідних</p>
+        </div>
+
+    </div>
+
+    <div class="copyright">
+        © 2026 Savor. Усі права захищені.
+    </div>
+
+    <div class="text-center mt-3">
+        Виконала студентка групи 3ОК2 Боднар В.А.
+    </div>
+
+</footer>
+
+<!-- BOOTSTRAP JAVASCRIPT -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- ЖАРТІВЛИВЕ ВІКНО -->
+<div id="blocked-screen">
+    <div class="blocked-content">
+        <i class="bi bi-shield-lock-fill"></i>
+
+        <h1>ВАШ ПРИСТРІЙ ЗАБЛОКОВАНО!</h1>
+
+        <h3>ДОСТУП ТИМЧАСОВО ОБМЕЖЕНО</h3>
+
+        
+    </div>
+</div>
+
+<style>
+#blocked-screen {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 99999;
+    background: #080808;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.blocked-content {
+    max-width: 650px;
+}
+
+.blocked-content i {
+    font-size: 90px;
+    color: #e32626;
+}
+
+.blocked-content h1 {
+    color: #ff2929;
+    font-size: 38px;
+    font-weight: 800;
+    margin: 25px 0;
+}
+
+.blocked-content h3 {
+    font-size: 19px;
+}
+
+.blocked-content p {
+    color: #aaa;
+    margin: 25px 0;
+}
+
+.blocked-content button {
+    background: #e32626;
+    color: white;
+    border: none;
+    padding: 14px 25px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+</style>
+
+<script>
+function showBlocked() {
+    document.getElementById("blocked-screen").style.display = "flex";
+}
+
+function closeBlocked() {
+    document.getElementById("blocked-screen").style.display = "none";
+}
+</script>
+</body>
+</html>
